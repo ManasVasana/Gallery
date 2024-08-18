@@ -1,0 +1,90 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navbar unordered list */
+.navbar ul {
+    max-width: 500px;
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(17, 17, 17);
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: aqua;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+/* Main item styles */
+.mainitem {
+    display: flex;
+    position: relative; /* Required for absolute positioning of dropdown */
+    padding: 10px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect on list items */
+.mainitem:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+/* Dropdown menu, initially hidden */
+.dropdown {
+    display: none;
+    position: absolute; /* Positions dropdown below the parent list item */
+    top: 100%; /* Ensures dropdown is placed directly below the parent */
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    border-radius: 10px;
+    z-index: 1000; /* Ensures the dropdown is above other content */
+}
+
+/* Show dropdown menu on hover */
+.mainitem:hover .dropdown {
+    display: block;
+}
+
+/* Dropdown list items */
+.dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect on dropdown items */
+.dropdown li:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.dropdown ul {
+    display: block;
+}
+
+.dropdown ul li {
+    width: 100px;
+    padding: 10px;
+}
